@@ -16,10 +16,10 @@ import {
 import { useEffect, useState } from "react";
 
 import { Button } from "@/components/ui/button";
-import aboutWorkspaceAsset from "@/assets/about-workspace.jpg.asset.json";
-import portraitAsset from "@/assets/vaddi-ramatheertham.jpeg.asset.json";
-import resumeAsset from "@/assets/vaddi-ramatheertham-resume.doc.asset.json";
-import uiuxWorkshopAsset from "@/assets/uiux-workshop.jpg.asset.json";
+import aboutWorkspaceAsset from "@/assets/about-workspace.jpg";
+import portraitAsset from "@/assets/vaddi-ramatheertham.jpeg";
+import resumeAsset from "@/assets/vaddi-ramatheertham-resume.doc"; // Make sure your bundler supports .doc
+import uiuxWorkshopAsset from "@/assets/uiux-workshop.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
