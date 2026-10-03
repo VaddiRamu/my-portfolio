@@ -2,7 +2,7 @@ name: Deploy Portfolio to GitHub Pages
 
 on:
   push:
-    branches: [main] # Triggers when you push code to main
+    branches: [main]
 
 permissions:
   contents: read
@@ -33,8 +33,9 @@ jobs:
         run: npm install --legacy-peer-deps
 
       - name: Compile and Prerender Static Production Site
-        run: npm run build
-        cp .output/public/index.html .output/public/404.html
+        run: |
+          npm run build
+          cp .output/public/index.html .output/public/404.html
 
       - name: Setup GitHub Pages Deployment Context
         uses: actions/configure-pages@v5
@@ -42,7 +43,7 @@ jobs:
       - name: Upload Static Assets
         uses: actions/upload-pages-artifact@v3
         with:
-          path: '.output/public' # Points directly to your framework's build output folder
+          path: '.output/public'
 
       - name: Publish to GitHub Pages Live Server
         id: deployment
