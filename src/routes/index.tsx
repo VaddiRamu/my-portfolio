@@ -131,7 +131,7 @@ function Portfolio() {
             <Button variant="icon" size="icon" onClick={() => setLight((value) => !value)} aria-label={light ? "Use dark theme" : "Use light theme"} title={light ? "Dark theme" : "Light theme"}>
               {light ? <Moon className="size-4" /> : <Sun className="size-4" />}
             </Button>
-            <Button asChild variant="secondary" className="hidden sm:inline-flex"><a href={resumeAsset.url} download="Vaddi-Ramatheertham-Resume.doc"><Download className="size-4" /> Resume</a></Button>
+            <Button asChild variant="secondary" className="hidden sm:inline-flex"><a href={resumeAsset} download="Vaddi-Ramatheertham-Resume.doc"><Download className="size-4" /> Resume</a></Button>
             <Button variant="icon" size="icon" className="lg:hidden" onClick={() => setMenuOpen((value) => !value)} aria-label="Toggle navigation">{menuOpen ? <X className="size-5" /> : <Menu className="size-5" />}</Button>
           </div>
         </div>
@@ -148,7 +148,7 @@ function Portfolio() {
             <div className="mt-8 flex flex-wrap gap-3">
               <Button asChild size="lg"><a href="#experience"><BriefcaseBusiness className="size-4" />View Experience</a></Button>
               <Button asChild variant="secondary" size="lg"><a href="#projects">View Projects</a></Button>
-              <Button asChild variant="secondary" size="lg"><a href={resumeAsset.url} download="Vaddi-Ramatheertham-Resume.doc"><Download className="size-4" />Download Resume</a></Button>
+              <Button asChild variant="secondary" size="lg"><a href={resumeAsset} download="Vaddi-Ramatheertham-Resume.doc"><Download className="size-4" />Download Resume</a></Button>
               <Button asChild variant="ghost" size="lg"><a href="#contact">Contact Me<ArrowDown className="size-4" /></a></Button>
             </div>
           </div>
@@ -189,7 +189,7 @@ function Portfolio() {
 
       <section id="contact" className="border-t border-border bg-card px-4 py-24 sm:px-6"><div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-2 lg:items-end"><div><SectionHeading kicker="Contact" title="Let’s connect." /><p className="mt-6 max-w-xl text-muted-foreground">For professional opportunities and frontend or UI/UX conversations, reach me directly by email or phone.</p></div><div className="grid gap-4 sm:grid-cols-2"><a href="mailto:vramu11358@gmail.com" className="group rounded-lg border border-border bg-background p-5 hover:border-primary/45"><Mail className="mb-4 size-5 text-primary" /><span className="block text-xs uppercase text-muted-foreground">Email</span><span className="mt-1 block break-all font-medium text-foreground">vramu11358@gmail.com</span></a><a href="tel:+919492291130" className="group rounded-lg border border-border bg-background p-5 hover:border-primary/45"><Phone className="mb-4 size-5 text-primary" /><span className="block text-xs uppercase text-muted-foreground">Phone</span><span className="mt-1 block font-medium text-foreground">+91 94922 91130</span></a></div></div></section>
 
-      <footer className="border-t border-border px-4 py-8 sm:px-6"><div className="mx-auto flex max-w-7xl flex-col gap-4 text-sm text-muted-foreground sm:flex-row sm:items-center sm:justify-between"><p>© 2026 Vaddi Ramatheertham</p><div className="flex gap-5"><a href={resumeAsset.url} download="Vaddi-Ramatheertham-Resume.doc" className="hover:text-primary">Resume</a><a href="https://www.behance.net/vramu0401a0b7" target="_blank" rel="noreferrer" className="hover:text-primary">Behance</a><a href="#home" className="hover:text-primary">Back to top</a></div></div></footer>
+      <footer className="border-t border-border px-4 py-8 sm:px-6"><div className="mx-auto flex max-w-7xl flex-col gap-4 text-sm text-muted-foreground sm:flex-row sm:items-center sm:justify-between"><p>© 2026 Vaddi Ramatheertham</p><div className="flex gap-5"><a href={resumeAsset} download="Vaddi-Ramatheertham-Resume.doc" className="hover:text-primary">Resume</a><a href="https://www.behance.net/vramu0401a0b7" target="_blank" rel="noreferrer" className="hover:text-primary">Behance</a><a href="#home" className="hover:text-primary">Back to top</a></div></div></footer>
     </main>
   );
 }
