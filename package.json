@@ -1,6 +1,6 @@
 {
   "name": "tanstack_start_ts",
-  "homepage": "https://VaddiRamu.github.io/my-portfolio",
+  "homepage": "https://vaddiramu.github.io/my-portfolio",
   "private": true,
   "sideEffects": false,
   "type": "module",
@@ -10,7 +10,7 @@
     "build:dev": "vite build --mode development",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
+     "deploy": "gh-pages -d .output/public",
     "lint": "eslint .",
     "format": "prettier --write ."
   },

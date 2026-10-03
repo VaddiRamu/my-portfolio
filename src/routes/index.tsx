@@ -18,7 +18,7 @@ import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import aboutWorkspaceAsset from "@/assets/about-workspace.jpg";
 import portraitAsset from "@/assets/vaddi-ramatheertham.jpeg";
-import resumeAsset from "@/assets/vaddi-ramatheertham-resume.doc"; // Make sure your bundler supports .doc
+import resumeAsset from "@/assets/vaddi-ramatheertham-resume.doc?url"; // Make sure your bundler supports .doc
 import uiuxWorkshopAsset from "@/assets/uiux-workshop.jpg";
 
 export const Route = createFileRoute("/")({
