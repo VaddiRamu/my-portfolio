@@ -14,7 +14,7 @@ export default defineConfig({
    tanstackStart: {
     // Redirect TanStack Start's bundled server entry to src/server.ts
     server: { entry: "server" },
-    // 👇 Tell the underlying engine to crawl and generate fully static HTML pages
+    // Tell the underlying engine to crawl and generate fully static HTML pages
     prerender: {
       routes: ['/'],
     }

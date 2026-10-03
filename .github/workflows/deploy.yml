@@ -34,6 +34,7 @@ jobs:
 
       - name: Compile and Prerender Static Production Site
         run: npm run build
+        cp .output/public/index.html .output/public/404.html
 
       - name: Setup GitHub Pages Deployment Context
         uses: actions/configure-pages@v5
